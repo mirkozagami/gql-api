@@ -1,0 +1,9 @@
+    type User {
+        id: ID!
+        username: String
+        digestedPassword: String
+    }
+
+    extend type Query {
+        user(id: ID!) : User
+    }
